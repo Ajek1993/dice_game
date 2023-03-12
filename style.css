@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    background-color: rgb(149, 146, 142);
+    font-family: sans-serif;
+}
+
+header {
+    border: 1px solid black;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgb(243, 235, 235);
+    box-shadow: 2px 2px 25px gray inset;
+}
+
+.title a {
+    text-decoration: none;
+    color:blueviolet
+}
+
+.title a:hover {
+    color: green
+}
+
+main {
+    height: 620px;
+    margin: 0px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.btn-play {
+    margin-top: 50px;
+    height: 60px;
+    width: 175px;
+    font-size: 30px;
+    border-radius: 40px;
+    cursor: pointer;   
+}
+
+.btn-play:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.5s;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 0px auto;
+    font-size: 22px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.dice_score1,
+.dice_score2,
+.dice_score3,
+.dice_score4,
+.dice_score5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    margin: 0px 20px 20px 0px;
+    border: 1px solid black;
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
