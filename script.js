@@ -55,7 +55,7 @@ const findFigure = (nums) => {
     ) {
       pointsPerRound +=
         (countNumbers.indexOf(2) + 1 + (countNumbers.lastIndexOf(2) + 1)) * 3;
-      return `Dwie pary z ${countNumbers.indexOf(2) + 1} oraz ${
+      return `Two pairs of ${countNumbers.indexOf(2) + 1} & ${
         countNumbers.lastIndexOf(2) + 1
       }`;
     }
@@ -63,43 +63,43 @@ const findFigure = (nums) => {
     if (countNumbers.includes(2) && countNumbers.includes(3)) {
       pointsPerRound +=
         (countNumbers.indexOf(2) + 1 + (countNumbers.indexOf(3) + 1)) * 3;
-      return `Full z ${countNumbers.indexOf(2) + 1} oraz ${
+      return `Full House of ${countNumbers.indexOf(2) + 1} & ${
         countNumbers.indexOf(3) + 1
       }`;
     }
 
     if (countNumbers.join("").includes("111110")) {
       pointsPerRound += 45;
-      return "Mały strit";
+      return "Small Straight";
     }
 
     if (countNumbers.join("").includes("011111")) {
       pointsPerRound += 60;
-      return "Duży strit";
+      return "Large Straight";
     }
 
     if (countNumbers.includes(2)) {
       pointsPerRound += (countNumbers.indexOf(2) + 1) * 3;
-      return "Para z " + (countNumbers.indexOf(2) + 1);
+      return "Pair of " + (countNumbers.indexOf(2) + 1);
     }
 
     if (countNumbers.includes(3)) {
       pointsPerRound += (countNumbers.indexOf(3) + 1) * 3;
-      return "Trójka z " + (countNumbers.indexOf(3) + 1);
+      return "3 of a Kind " + (countNumbers.indexOf(3) + 1);
     }
 
     if (countNumbers.includes(4)) {
       pointsPerRound += 90;
-      return "Kareta z " + (countNumbers.indexOf(4) + 1);
+      return "4 of a Kind " + (countNumbers.indexOf(4) + 1);
     }
 
     if (countNumbers.includes(5)) {
       pointsPerRound += 120;
-      return "Poker z " + (countNumbers.indexOf(5) + 1);
+      return "Poker of " + (countNumbers.indexOf(5) + 1);
     }
   }
   pointsPerRound += numArr.reduce((a, c) => a + c) * 3;
-  return "Reszta";
+  return "Rest";
 };
 
 const fillTable = (scoreNumbers) => {
