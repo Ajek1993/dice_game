@@ -78,7 +78,7 @@ th, tr, td {
   padding: 6px 8px;
 }
 
-tr td:last-child {
+tr td:nth-last-child(2) {
   min-width: 250px;
 }
 
