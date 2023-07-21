@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 node_modules/
 .sass-cache/
+.parcel-cache
 
 ### OSX ###
 .DS_Store
