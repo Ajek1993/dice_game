@@ -11,7 +11,7 @@ let pointsPerRound = 0;
 
 btnPlay.addEventListener("click", () => {
   pointsPerRound = 0;
-  if (numbersOfGame >= 15) {
+  if (numbersOfGame >= 10) {
     figure.innerText =
       "You have reached your game limit, click reset to play again";
     return;
