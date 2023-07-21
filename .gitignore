@@ -1,10 +1,10 @@
 ### Node ###
+# Logs
 logs
 *.log
 npm-debug.log*
 node_modules/
 .sass-cache/
-.parcel-cache
 
 ### OSX ###
 .DS_Store
@@ -15,6 +15,7 @@ node_modules/
 *~
 
 ### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
 .settings/
 .vscode/
 
@@ -24,3 +25,5 @@ node_modules/
 ### Other ###
 .test/
 .solution
+dist
+.parcel-cache
